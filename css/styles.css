@@ -160,24 +160,24 @@ div {
   display: none;
 }
 .press {
-  width: 49.5%;
+  width: 49%;
   float: left;
-  height: 220px;
+  height: 200px;
   border-right-color: 10px solid white;
   border-top: 10px solid white;
-  top: -275px
+  top: -205px;
 }
 .press h5 {
   text-align: center;
-  padding-top: 40px;
+  padding-top: 30px;
   line-height: 30px;
 
 }
 .summary {
-  width: 49.5%;
+  width: 49%;
   float: right;
-  height: 220px;
-  top: -240px;
+  height: 190px;
+  top: -170px;
   border-left-color: 10px solid white;
   border-top: 10px solid white;
   text-align:center;
@@ -239,6 +239,7 @@ div {
   }
   .container {
     overflow: none;
+    position: relative;
   }
   .feature-container {
     width: 70%;
@@ -262,18 +263,20 @@ div {
   display: block;
 }
 .feature img  {
-  width: 877px;
+  width: 860px;
   overflow: hidden;
+  margin-top: 0;
 }
 
 .press {
-  max-width: 360px;
+  max-width: 367px;
   top: -198px;
   margin-top: -50px;
   width: 100%;
   float: right;
   left: 0;
-  height: 252px;
+  height: 282px;
+
 }
 .press h5 {
   padding-top: 60px;
@@ -283,8 +286,8 @@ div {
   width: 100%;
   float: right;
   display: block;
-  height: 261px;
-  max-width: 360px;
+  height: 282px;
+  max-width: 367px;
   position: relative;
 }
 .summary p {
