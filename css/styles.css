@@ -263,7 +263,7 @@ div {
   display: block;
 }
 .feature img  {
-  width: 860px;
+  width: 865px;
   overflow: hidden;
   margin-top: 0;
 }
@@ -288,7 +288,6 @@ div {
   display: block;
   height: 282px;
   max-width: 367px;
-  position: relative;
 }
 .summary p {
   padding: 5px;
