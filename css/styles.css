@@ -7,18 +7,14 @@
   }
 
 body {
-  background-color: pink;
+  background-color: black;
   color: grey;
   overflow: hidden;
-  font-size: 1vmin;
-
+  font-size: 2vh;
 }
 div {
   font-size: 15px;
   width: 100%;
-
-
-
 }
 .container {
   width: 90%;
@@ -27,14 +23,15 @@ div {
 }
 .header-main {
   margin: 0;
-  padding; 10px;
+  padding; 0;
   background-color: white;
-  height: 90px;
-
+  height: 100px;
+  top: 20px;
+  color: black;
 }
 .header-main h2 {
   margin-bottom: -10px;
-  padding: 20px;
+  padding: 10px;
   font-size: 15px;
   margin-top: 20px;
   margin-left: 2%;
@@ -45,18 +42,17 @@ div {
   padding: 0;
   overflow: hidden;
   width: 100%;
-
-
+  margin-top: 40px;
 }
 .header-main ul li {
-
   list-style: none;
   display: inline;
   margin: 0;
   float: left;
   text-decoration: none;
-  padding: 10px;
+  padding: px;
   margin-left: 2%;
+  margin-right: 2%;
   overflow: none;
   font-size: .8em;
 
@@ -66,10 +62,8 @@ div {
   display: inline;
   text-decoration: none;
   color: grey;
-  padding-right: -8px;
-
-
-
+  padding-right: -5px;
+  color: black;
 }
 .header-title h3, .header-title h5 {
   padding-left: 0px;
@@ -81,7 +75,7 @@ div {
   position: relative;
   overflow: hidden;
   display: block;
-  }
+}
 
 .feature img {
   width: 100%;
@@ -96,18 +90,19 @@ div {
   position: relative;
 }
 .press {
-  top: -30vh;
-  bottom: -50px;
+  top: -40px;
+  bottom: -60px;
   position: relative;
   background-color: white;
   text-align: center;
-
+  margin-top: 35px;
   height: 50px;
+  color: black;
 
 }
 .press h5 {
- padding: 10px;
- padding-top: 20px;
+   padding: 5px;
+   padding-top: 10px;
  }
 
 .sub-content {
@@ -115,26 +110,26 @@ div {
 }
 .summary {
   width: 100%;
-  height: 70px;
+  height: 110px;
   position: relative;
-  top: -200px;
+  top: -30px;
   bottom: 5px;
   background-color: white;
-  padding: 10px;
+  padding: 5px;
+  color: black;
 }
 
 @media screen and (min-width: 730px) {
-  .sub-content {
-    top: 30vh;
+.sub-content {
+  top: 30vh;
   }
 }
-@media screen and (min-width: 490px) {
+@media screen and (min-width: 460px) {
 
-  .summary {
-   height: 10vh;
-   top: -25vh;
-  }
-
+.summary {
+ height: 108px;
+ top: -27vh;
+}
 }
 
 
@@ -148,54 +143,95 @@ div {
   overflow: none;
 }
 .feature img {
-  position: absolute;
+  position: relative;
   top: 0;
   overflow: none;
   max-height: 100%;
-
+}
+.feature img {
+  z-index: -1;
+  width: 795px;
+  height: 530px;
+  visibility: visible;
+  top: 0;
+  left: 0;
 }
 .feature h5 {
   display: none;
 }
-
-.sub-content {
-  top 0;
-}
 .press {
-  width: 49%;
+  width: 49.5%;
   float: left;
-  height: 200px;
+  height: 220px;
   border-right-color: 10px solid white;
   border-top: 10px solid white;
-  margin-right: 2%;
+  top: -275px
+}
+.press h5 {
+  text-align: center;
+  padding-top: 40px;
+  line-height: 30px;
 
 }
 .summary {
-  width: 49%;
+  width: 49.5%;
   float: right;
-  height: 200px;
-  margin-right: 2%;
+  height: 220px;
+  top: -240px;
   border-left-color: 10px solid white;
   border-top: 10px solid white;
+  text-align:center;
+}
 
+.summary p {
+  text-align: center;
+  padding-top: 20px;
 }
 .header-title h3, .header-title h5 {
-  margin-bottom: -35px;
-  }
-  .header-title {
-    width: 10%;
-    z-index: 1;
-    height: 200px;
+  color: black;
+  margin-left: 50px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+}
+.header-title  h5 {
+  font-size: 1em;
 
-  }
-  .header-main {
-    z-index: 1;
-    width: 200px;
-    margin: 25px 0 0 25px;
-  }
-  .feature img {
-    z-index: 1;
-  }
+}
+.header-title {
+  width: 30%;
+  z-index: 1;
+  height: 200px;
+  overflow: none;
+  bottom: 5px;
+  position: absolute;
+  top: 400px;
+}
+.header-main {
+  z-index: 1;
+  width: 180px;
+  height: 180px;
+  overflow: hidden;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 50px;
+  color: black;
+
+}
+.header-main h2 {
+  margin-top: 20px;
+}
+
+.list li {
+  padding: 2px;
+  margin-bottom: 10px;
+  padding-left: 4px;
+}
+.header-main a {
+  display: block;
+  margin-top: 5px;
+}
+
 }
 @media screen and (min-width: 930px) {
   body {
@@ -207,53 +243,52 @@ div {
   .feature-container {
     width: 70%;
   }
+
 .header-main {
-  display: block;
-  width: 300px;
-  position: absolute;
+  z-index: 1;
+  width: 160px;
+  height: 160px;
+  overflow: hidden;
+  position: fixed;
+  margin-top: 10px;
+  margin-left: 50px;
+
 }
-    .sub-content {
-      width: 100%;
-      float: right;
-      position: relative;
-      left: 70%;
-      display: block;
+.sub-content {
+  width: 30%;
+  float: right;
+  position: absolute;
+  left: 70%;
+  display: block;
+}
+.feature img  {
+  width: 877px;
+  overflow: hidden;
+}
 
-
-    }
-  .feature img  {
-   width: 1260px;
-   position: relative;
-   display: block;
-   top: -360px;
-   height: 840px;
-   overflow: hidden;
-   z-index: 1;
-
-
-
-  }
-
-  .press {
-
-    margin-top: 150px;
-    width: 100%;
-    float: right;
-
-    height: 100%;
-    position: relative;
-    display: block;
-    text-align: center;
-
-  }
-  .summary {
-    margin-top: 80px;
-    top: -250px;
-    width: 100%;
-    float: right;
-    display: block;
-    height: 100%;
-    max-width: 340px;
-    position: relative;
-  }
+.press {
+  max-width: 360px;
+  top: -198px;
+  margin-top: -50px;
+  width: 100%;
+  float: right;
+  left: 0;
+  height: 252px;
+}
+.press h5 {
+  padding-top: 60px;
+}
+.summary {
+  top: -182px;
+  width: 100%;
+  float: right;
+  display: block;
+  height: 261px;
+  max-width: 360px;
+  position: relative;
+}
+.summary p {
+  padding: 5px;
+  padding-top: 50px;
+}
 }
